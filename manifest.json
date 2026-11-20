@@ -1,0 +1,16 @@
+{
+  "name": "ADR BOOK - Tehlikeli Madde Rehberi",
+  "short_name": "ADR BOOK",
+  "start_url": "https://adrbook.com/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "/store_listing/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

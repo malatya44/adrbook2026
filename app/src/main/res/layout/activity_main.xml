@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top Loading Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone"
+        android:elevation="4dp" />
+
+    <!-- Pull to Refresh & WebView Container -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adViewContainer"
+        android:layout_below="@id/progressBar">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Offline layout error screen -->
+    <include
+        layout="@layout/layout_offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adViewContainer" />
+
+    <!-- Google AdMob Banner Container (Sticky Bottom) -->
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:minHeight="50dp" />
+
+</RelativeLayout>

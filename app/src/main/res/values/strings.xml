@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ADR BOOK</string>
+    <string name="website_url">https://adrbook.com</string>
+    
+    <!-- Google AdMob IDs (ca-pub-1990493173299958) -->
+    <!-- Test App ID for development; replace with your real App ID from AdMob Console -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    
+    <!-- AdMob Banner Unit ID (Google Test Banner ID / Production Banner ID) -->
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    
+    <!-- AdMob Interstitial Unit ID (Google Test Interstitial ID) -->
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!-- UI Strings -->
+    <string name="loading_title">ADR BOOK Yükleniyor...</string>
+    <string name="offline_title">Bağlantı Hatası</string>
+    <string name="offline_desc">ADR BOOK sunucularına ulaşılamadı. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.</string>
+    <string name="btn_retry">Yeniden Dene</string>
+    <string name="exit_prompt">Çıkmak için tekrar basın</string>
+    <string name="app_slogan">Tehlikeli Madde Taşımacılığı ve TMGD Rehberi</string>
+</resources>

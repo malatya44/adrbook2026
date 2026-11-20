@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "adrbook",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/gizlilik", "destination": "/privacy.html" }
+  ]
+}
